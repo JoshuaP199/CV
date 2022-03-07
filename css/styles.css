@@ -8,13 +8,16 @@ body {
     width: auto;
     position: relative;
     padding-top: 100px;
-
     height: 88vh;
 }
 .intro h1 {
-    margin-top: 0;
+    margin: 65px auto 0px auto;
     padding-top: 80px;
-    font-size: 90px;
+    font-size: 5.625rem; /* 16px == 100% == 1em/1rem */
+}
+.intro p {
+    font-size: 1.5rem; 
+    font-weight: normal;
 }
 .bottom-cloud {
     position: absolute;
@@ -27,28 +30,66 @@ body {
     top: 15%;
 }
 .middle-container {
-    background-color: #398AB9;
+    background-color: #D8D2CB;
 }
 .skills {
-    background-color: #D8D2CB;
-
-    padding: 30px;
+    padding: 20px;
 }
 .bottom-container {
     background-color: #EEEEEE;
-
-    padding: 30px;
+    padding: 40px;
 }
-.contact-me h2 {
-    margin-top: 0;
+.bottom-container p {
+    padding-top: 30px;
+}
+.bottom-container a{
+    margin: auto 20px auto
+}
+.contact-me {
+    width: 40%;
+    margin: 25px auto 0px auto;
+    padding: 20px 20px 80px 20px;
+}
+.contact-me a {
+    display: block;
+    margin-top: 60px;
+}
+.contact-me h2, h3, p {
+    padding: 15px;
 }
 .profile {
-
-    padding: 30px;
+    padding: 50px 20px 20px 20px;
 }
+.profile p {
+    width: 30%;
+    margin: 30px auto;
+}
+hr {
+    height: 2px;
+    border-style: none;
+    border-top: dotted 8px;
+    width: 5%;
+    color: #398AB9;
+}
+
 .mountain {
-    shape-image-threshold: inherit;
+    margin: -250px auto auto -250px;
+    width: 600px;
+    height: 400px;
+    left: 46%;
     position: absolute;
     bottom: 0;
-    right: 30%;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 50px auto;
+    text-align: left;
+    line-height: 2;
+}
+.comp-image {
+    width: 25%;
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
 }
