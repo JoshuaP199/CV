@@ -1,0 +1,14 @@
+div.gallery {
+    margin:5px;
+    float: left;
+    width: 250px;
+}
+
+div.gallery img:hover {
+    border: 2px solid rgb(92, 91, 91);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
