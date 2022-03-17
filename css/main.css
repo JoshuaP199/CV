@@ -14,7 +14,7 @@ a {
     font-size: 30px;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     /*Maybe have it where the image changes depending on the time? Guess with JS*/
-    background-image: url(/images/antenna.jpg);
+    background-image: url(images/antenna.jpg);
     background-color: #86C6F4;
     /*background could be an image with me in it or an animation of something*/
     background-repeat: no-repeat;
