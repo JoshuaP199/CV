@@ -1,7 +1,7 @@
 body {
     background-color: rgb(201, 201, 201);
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Tahoma, sans-serif;
     font-size: 18px;
 }
 a {
@@ -9,14 +9,13 @@ a {
     text-decoration: none;
 }
 
-/* Intro Page */
+/* -------------------- Intro Page -------------------- */
 .home-image {
-    font-size: 30px;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     /*Maybe have it where the image changes depending on the time? Guess with JS*/
-    background-image: url(images/antenna.jpg);
+    background-image: url(/images/antenna.jpg);
+    /* Maybe have it where we can import an image to set as the background when logged in */
     background-color: #86C6F4;
-    /*background could be an image with me in it or an animation of something*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -29,14 +28,18 @@ a {
     transform: translateX(-80%) translateY(-50%);
 }
 .intro {
+    font-size: 2rem;
     text-shadow: 0px 0px 3px black;
     color: rgb(231, 231, 231);
+}
+.intro h5 {
+    color: #808080;
 }
 a:hover {
     color: blue;
 }
 
-/* Middle Container */
+/* -------------------- Middle Container -------------------- */
 .middle-container {
     background-color: #D8D2CB;
     text-align: center;
@@ -50,12 +53,12 @@ hr {
     color: #398AB9;
 }
 
-/* Profile*/
+/* -------------------- Profile --------------------*/
 .profile {
     padding: 50px 20px 20px 20px;
 }
 .profile p {
-    width: 25%;
+    width: 43%;
     margin: 30px auto;
     line-height: 2;
 }
@@ -63,7 +66,7 @@ hr {
     width: 15%;
 }
 
-/* Skills */
+/* -------------------- Skills -------------------- */
 .skills {
     padding: 20px;
 }
@@ -72,6 +75,7 @@ hr {
     margin: 50px auto;
     text-align: left;
     line-height: 2;
+    padding-bottom: 20px;
 }
 .comp-image {
     width: 25%;
@@ -85,21 +89,7 @@ hr {
     margin-right: 30px;
 }
 
-/* Contact */
-.contact-me {
-    width: 40%;
-    margin: 25px auto 0px auto;
-    padding: 20px 20px 80px 20px;
-}
-.contact-me a {
-    display: block;
-    margin-top: 60px;
-}
-.contact-me h2, h3, p {
-    padding: 15px;
-}
-
-/* Footer */
+/* -------------------- Footer -------------------- */
 .bottom-container {
     background-color: #EEEEEE;
     text-align: center;
@@ -110,4 +100,81 @@ hr {
 }
 .bottom-container a{
     margin: auto 20px auto
+}
+
+/* Contact */
+.contact-me {
+    width: 40%;
+    margin: 25px auto 0px auto;
+    padding: 20px 20px 80px 20px;
+}
+.contact-me a {
+    display: block;
+    margin-top: 2rem;
+}
+.contact-me h2, h3, p {
+    padding: 15px;
+} 
+
+/* -------------------- Smaller Laptop and Tablet Size -------------------- */
+@media screen and (max-width: 1300px){
+    .portrait{
+        width: 20%;
+    }
+    .comp-image{
+        width: 30%;
+    }
+    .camera-image{
+        width: 30%;
+    }
+}
+
+/* -------------------- Phone Size -------------------- */
+@media screen and (max-width: 725px){
+    .intro{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0rem 2rem;
+    }
+    .center{
+        transform: translateX(0) translateY(0);
+        top: 35%;
+        left: 0%;
+    }
+    .skill-row{
+        text-align: center;
+        width: 65%;
+    }
+    .skills{
+        padding: 20px 0px
+    }
+    .portrait{
+        width: 35%;
+    }
+    .comp-image{
+        width: 50%;
+        margin-right: 0;
+        float: none;
+    }
+    .camera-image{
+        width: 50%;
+        margin-right: 0;
+        float: none;
+    }
+    hr{
+        width: 10%;
+    }
+    .profile p{
+        font-size: medium;
+        line-height: 1.5;
+        width: 70%;
+    }
+    .skill-row p{
+
+        font-size: medium;
+        line-height: 1.8;
+    }
+    .contact-me {
+        width: 70%;
+    }
 }

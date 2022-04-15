@@ -1,7 +1,16 @@
+body {
+    background-color: #D8D2CB;
+    text-align: center;
+}
+#galleryNav {
+    background-color: #398AB9; 
+    display: block;
+}
+
 div.gallery {
     margin:5px;
     float: left;
-    width: 250px;
+    width: auto;
 }
 
 div.gallery img:hover {
@@ -9,6 +18,8 @@ div.gallery img:hover {
 }
 
 div.gallery img {
-    width: 100%;
+    width: 22rem;
     height: auto;
+    margin: auto 2px;
+    padding: 5px;
 }

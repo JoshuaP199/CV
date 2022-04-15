@@ -6,15 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="css/gallery.css" type="text/css">
-    <title>Document</title>
+    <link rel="icon" href="images/favicon.ico">
+    <title>Joshua Perez</title>
 </head>
 <body>
-    <h1>Photo Gallary</h1>
-    <div class="gallery">
-        <!--Need a database with all the images and use php with this script layout to display them-->
-        <a href="images/Flower.JPG">
-            <img src="images/Flower.JPG" alt="Flower" width="600" height="400">
+    <table id="galleryNav">
+        <tr>
+            <td>
+                <h1>Photo Gallary (Unfinished)</h1>
+            </td>
+            <td>
+                <h4><a href="index.html" style="padding-left: 20px;">Home</a></h4>
+            </td>
+            <td>
+                <h4><a href="signIn.html">upload</a></h4>
+            </td>
+        </tr>
+    </table>
+    <div class="gallery">        
+        <a href="images/dog.jpg"> <!--This can be full size image since it will maximize it-->
+            <img src="images/dog.jpg" alt="Dog"> <!--This should be smaller size for load time-->
         </a>
+        <a href="images/flower.jpg">
+            <img src="images/flower.jpg" alt="Flower">
+        </a>
+        <a href="images/bird.jpg">
+            <img src="images/bird.jpg" alt="bird">
+        </a>
+        <a href="images/antenna.jpg">
+            <img src="images/antenna.jpg" alt="Antenna">
+        </a>
+        <a href="images/ModelKit.jpg">
+            <img src="images/ModelKit.jpg" alt="Model Kit">
+        </a>
+        <a href="images/robot.jpg">
+            <img src="images/robot.jpg" alt="robot">
+        </a>
+        <a href="images/Book.jpg">
+            <img src="images/Book.jpg" alt="book">
+        </a>
+        <a href="images/gundam1.jpg">
+            <img src="images/gundam1.jpg" alt="Gundam">
+        </a>
+        <a href="images/vidar.jpg">
+            <img src="images/vidar.jpg" alt="Vidar Gundam">
+        </a>
+        <a href="images/Dancing_Bot.jpg">
+            <img src="images/Dancing_Bot.jpg" alt="Dancing Robot">
+        </a>
+
+        <!--
+            Need a database with all the images and use php with this script layout to display them
+            Also add a upload button to upload photos to the DB that would require a sign in
+        -->
+
+        <!-- USING TABLES 
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <a href="images/dog.jpg">
+                        <img src="images/dog.jpg" alt="Dog">
+                    </a>
+                </td>
+                <td>
+                    <a href="images/flower.jpg">
+                        <img src="images/flower.jpg" alt="Flower">
+                    </a>
+                </td>
+                <td>
+                    <a href="images/bird.jpg">
+                        <img src="images/bird.jpg" alt="bird">
+                    </a>
+                </td>
+                <td>
+                    <a href="images/antenna.jpg">
+                        <img src="images/antenna.jpg" alt="Antenna">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="images/ModelKit.jpg">
+                        <img src="images/ModelKit.jpg" alt="Model Kit">
+                    </a>
+                </td>
+                <td>
+                    <a href="images/Book.jpg">
+                        <img src="images/Book.jpg" alt="Book">
+                    </a>
+                </td>
+                <td>
+                    <a href="images/robot.jpg">
+                        <img src="images/robot.jpg" alt="robot">
+                    </a>
+                </td>
+            </tr>
+        </table> -->
     </div>
 </body>
 </html>
