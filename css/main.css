@@ -170,11 +170,22 @@ hr {
         width: 70%;
     }
     .skill-row p{
-
+        padding-bottom: 2rem;
         font-size: medium;
         line-height: 1.8;
     }
     .contact-me {
         width: 70%;
     }
+    .bottom-container a{
+        display: block;
+        line-height: 2.5rem;
+    }
+}
+
+#nav {
+    display: block;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1;
 }
